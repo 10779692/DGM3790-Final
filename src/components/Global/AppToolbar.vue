@@ -31,7 +31,7 @@
             <v-toolbar-items>
             </v-toolbar-items>
         </v-toolbar>
-        
+
         <v-list class="pt-0">
             <v-divider></v-divider>
             <v-list-tile>

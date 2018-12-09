@@ -1,5 +1,5 @@
 <template>
-  <div id="AppHome">
+<div id="AppHome">
     <app-hero></app-hero>
     <app-progress></app-progress>
     <app-paralax></app-paralax>
@@ -9,7 +9,7 @@
     <app-portfolio-grid3></app-portfolio-grid3>
     <app-portfolio-grid4></app-portfolio-grid4>
     <app-c-t-a></app-c-t-a>
-  </div>
+</div>
 </template>
 
 <script>
@@ -23,7 +23,17 @@ import AppPortfolioGrid3 from './components/Home/AppPortfolioGrid3'
 import AppPortfolioGrid4 from './components/Home/AppPortfolioGrid4'
 import AppCTA from './components/Reusable/AppCTA'
 export default {
-  name: 'AppHome',
-  components:{AppHero,AppProgress,AppParalax,AppParagraphs,AppPortfolioGrid1,AppPortfolioGrid2,AppPortfolioGrid3,AppPortfolioGrid4,AppCTA}
+    name: 'AppHome',
+    components: {
+        AppHero,
+        AppProgress,
+        AppParalax,
+        AppParagraphs,
+        AppPortfolioGrid1,
+        AppPortfolioGrid2,
+        AppPortfolioGrid3,
+        AppPortfolioGrid4,
+        AppCTA
+    }
 }
 </script>

@@ -8,6 +8,7 @@
     <v-btn @click="fetchRandomJoke()">Generate Joke</v-btn>
 </div>
 </template>
+
 <script>
 import axios from 'axios'
 const API_RANDOM_JOKE_ENDPOINT = 'https://api.icndb.com/jokes/random'
@@ -16,7 +17,7 @@ export default {
     mounted() {
         this.fetchRandomJoke()
     },
-    data: function() {
+    data: function () {
         return {
             currentJoke: null
         }
@@ -24,11 +25,14 @@ export default {
     methods: {
         fetchRandomJoke() {
             axios.get(API_RANDOM_JOKE_ENDPOINT)
-                .then(({ data }) => this.currentJoke = data.value)
+                .then(({
+                    data
+                }) => this.currentJoke = data.value)
         }
     }
 }
 </script>
+
 <style scoped>
 .joke_generator {
     background-color: #f3f3f3;
