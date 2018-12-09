@@ -1,5 +1,6 @@
 <template>
   <v-jumbotron
+  fill-height
   :gradient="gradient"
   dark
   style="background-size:cover"
