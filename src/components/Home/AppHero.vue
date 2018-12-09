@@ -2,6 +2,7 @@
   <v-jumbotron
   :gradient="gradient"
   dark
+  style="background-size:cover"
   src="https://jreedwebdesign.com/wp-content/uploads/2018/04/hero-home-page-1024x682.jpg"
   >
     <v-container fill-height>
